@@ -4,7 +4,7 @@
 import numpy as np
 import gensim
 import pandas as pd #引入它主要是为了更好的显示效果
-import jieba
+# import jieba
 
 model = gensim.models.word2vec.Word2Vec.load('model/word2vec.model')
 
@@ -45,10 +45,10 @@ result = pd.Series(keywords(jieba.cut(s)))
 print(result[:10])
 
 
-from jieba.analyse import *
-# data = open('usercontent.txt').read()#读取文件
-for keyword,weight in textrank(s,withWeight = True ):
-    print('%s %s' %(keyword,weight))
+# from jieba.analyse import *
+# # data = open('usercontent.txt').read()#读取文件
+# for keyword,weight in textrank(s,withWeight = True ):
+#     print('%s %s' %(keyword,weight))
 
 
 # 计算两个词的相似度/相关程度

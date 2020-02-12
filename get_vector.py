@@ -4,9 +4,9 @@
  
  #逐行读取文件数据进行jieba分词
  
-import jieba
-import jieba.analyse
-import jieba.posseg as pseg  #引入词性标注接口
+# import jieba
+# import jieba.analyse
+# import jieba.posseg as pseg  #引入词性标注接口
 import codecs,sys
 import pkuseg
 
